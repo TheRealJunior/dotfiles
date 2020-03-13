@@ -113,3 +113,10 @@ ranger() {
         exit
     fi
 }
+
+
+rld-keynav() {
+    killall keynav
+    keynav > /dev/null 2>&1 &
+    disown
+}
